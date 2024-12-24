@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/colorBackgroundDark"
+    android:gravity="center_horizontal">
+
+    <!-- App Name (Centered) -->
+    <TextView
+        android:id="@+id/text_view_app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HabitEase"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorText"
+        android:layout_gravity="center"
+        android:paddingBottom="32dp" />
+
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/text_view_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Welcome back to track"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorText"
+        android:gravity="center_horizontal"/>
+
+    <!-- TextView to display today's date -->
+    <TextView
+        android:id="@+id/text_view_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textSize="18sp"
+        android:textColor="@color/colorText"
+        android:layout_marginBottom="16dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"/>
+
+    <!-- View Habits Button -->
+    <Button
+        android:id="@+id/button_view_habits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Habits"
+        android:textColor="@color/colorText"
+        android:background="@color/colorBackgroundLight"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Add Habit Button -->
+    <Button
+        android:id="@+id/button_add_habit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Habit"
+        android:textColor="@color/colorText"
+        android:background="@color/colorBackgroundLight"
+        android:layout_marginBottom="16dp" />
+</LinearLayout>
