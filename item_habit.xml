@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:gravity="center_vertical">
+
+    <!-- Habit Name -->
+    <TextView
+        android:id="@+id/text_view_habit_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_weight="1" />
+
+    <!-- CheckBox to mark habit as completed -->
+    <CheckBox
+        android:id="@+id/checkbox_habit_completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <!-- Delete Button -->
+    <Button
+        android:id="@+id/button_delete_habit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_marginLeft="16dp" />  <!-- Add margin for spacing -->
+</LinearLayout>
