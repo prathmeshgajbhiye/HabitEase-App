@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/text_view_add_habit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Your Habit"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/edit_text_habit_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Habit Name"
+        android:inputType="text"
+        android:layout_below="@id/text_view_add_habit" />
+
+    <Button
+        android:id="@+id/button_add_habit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Habit"
+        android:layout_below="@id/edit_text_habit_name"
+        android:layout_marginTop="16dp"
+        android:onClick="addHabit" />
+
+    <TextView
+        android:id="@+id/text_view_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_add_habit"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:textColor="@android:color/holo_green_dark" />
+
+</RelativeLayout>
